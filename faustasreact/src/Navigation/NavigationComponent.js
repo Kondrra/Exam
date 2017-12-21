@@ -10,6 +10,7 @@ export var NavigationComponent = () => {
                 <ul className="nav navbar-nav">
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/admin">Admin</NavLink></li>
+                    <li><NavLink to={"/books"}/>books</li>
                 </ul>
             </div>
         </nav>

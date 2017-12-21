@@ -7,6 +7,7 @@ import {BookEditorComponent} from "./Administration/BookEditorComponent";
 
 import{injector} from "react-services-injector";
 import services from './services';
+import {InstitutionListContainer} from "./Institution/InstitutionListContainer";
 
 injector.register(services);
 
@@ -15,7 +16,7 @@ ReactDOM.render((
             <div className="container">
                 <NavigationComponent />
                 <Switch>
-                    <Route exact path="/" component={BookListContainer} />
+                    <Route exact path="/" component={InstitutionListContainer} />
                     <Route exact path="/books" component={BookListContainer} />
                     <Route exact path="/admin/books/new" component={AdministrationContainer} />
                     <Route exact path="/admin" component={AdminContainer} />
