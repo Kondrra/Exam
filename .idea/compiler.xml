@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="faustas" />
+        <module name="faustas-app" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="faustas" target="1.8" />
+      <module name="faustas-app" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -19,8 +19,7 @@ ReactDOM.render((
                     <Route exact path="/books" component={BookListContainer} />
                     <Route exact path="/admin/books/new" component={AdministrationContainer} />
                     <Route exact path="/admin" component={AdminContainer} />
-                    <Route exact path="/admin/books/:id" component={BookEditComponent} />
-//*<Route path="/cart-details" component={CartContainer} />*//
+                    <Route exact path="/admin/books/:id" component={BookEditorComponent} />
                 </Switch>
             </div>
         </BrowserRouter>
