@@ -1,18 +1,17 @@
 import React from 'react';
 import axios from 'axios';
-import {ProductListComponent} from "./BookListComponent";
-import SearchContainer from '../Search/SearchContainer';
+import {ProductListComponent} from "./InstitutionComponent";
 import queryString from 'query-string';
 
-export class ProductListContainer extends React.Component {
+export class InstitutionListContainer extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { books: []};
+        this.state = { institutions: []};
     }
 
     componentWillMount = () => {
-        axios.get('http://localhost:8080/api/books')
+        axios.get('http://localhost:8080/api/institutions')
             .then((response) => {
                 this.setState( {books: response.data} );
             })

@@ -3,7 +3,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 export class BookCardComponent extends React.Component {
 
-    getProduct = (event) => {
+    getBook = (event) => {
         this.props.history.push("/books/" + this.props.id);
         event.preventDefault();
     };

@@ -15,7 +15,7 @@ export var AdminProductComponent = (props) => {
 
     var handleRemove = (event) => {
         props.remove(event.target.id);
-        axios.delete('http://localhost:8081/api/admin/books/' + event.target.id)
+        axios.delete('http://localhost:8080/api/admin/books/' + event.target.id)
             .then(response => {
 
             })
