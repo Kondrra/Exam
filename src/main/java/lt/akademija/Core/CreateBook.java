@@ -1,19 +1,12 @@
 package lt.akademija.Core;
 
 public class CreateBook {
-    private Long id;
+
     private String title;
     private String image;
     private String author;
     private double numberofpages;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getTitle() {
         return title;
